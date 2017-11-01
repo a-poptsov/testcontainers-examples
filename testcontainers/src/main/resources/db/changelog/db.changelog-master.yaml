@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: init
+      author: alexei.poptsov@gmail.com
+      preConditions:
+        - dbms:
+            type: postgresql
+
+  - include:
+      file: db/changelog/changelog.xml
